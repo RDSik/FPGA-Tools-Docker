@@ -60,7 +60,7 @@ RUN git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
     bazel build -c opt :install-binaries && \
     .github/bin/simple-install.sh ~/bin && \
-    pwd && \
+    cd ../ && \
     ls
 
 # RUN cp bin/verible/verilog/tools/ls/verible-verilog-ls ~/../../usr/local/bin && \
