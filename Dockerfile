@@ -56,7 +56,7 @@ RUN apt-get update -y && \
     zip \
     pkg-config \
     wget \
-    zliblg-dev \
+    zlib1g-dev \
     python3
 
 RUN wget https://github.com/bazelbuild/bazel/releases/download/8.0.1/bazel-8.0.1-installer-linux-x86_64.sh && \
