@@ -63,7 +63,7 @@ RUN wget https://github.com/bazelbuild/bazel/releases/download/8.0.1/bazel-8.0.1
     chmod u+x bazel-8.0.1-installer-linux-x86_64.sh && \
     ./bazel-8.0.1-installer-linux-x86_64.sh --user
 
-ENV export PATH="$PATH:$HOME/bin"
+ENV PATH="$PATH:$HOME/bin"
 
 # Build Verible 
 RUN git clone https://github.com/chipsalliance/verible.git && \
