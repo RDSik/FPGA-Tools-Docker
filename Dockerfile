@@ -70,7 +70,7 @@ RUN apt install apt-transport-https curl gnupg -y && \
     mv bazel-archive-keyring.gpg /usr/share/keyrings && \
     echo "deb [arch=amd64 signed-by=/usr/share/keyrings/bazel-archive-keyring.gpg] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list && \
     apt update && \
-    apt install -y bazel
+    apt install bazel -y
 
 # Build Verible 
 RUN git clone https://github.com/chipsalliance/verible.git && \
