@@ -1,0 +1,17 @@
+name: Build tools
+
+on: 
+  push:
+    branches: [master]
+
+jobs:
+  build-container:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v1    
+      - name: Build the docker image
+        uses: docker/build-push-action@v2
