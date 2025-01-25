@@ -61,11 +61,9 @@ RUN apt-get update -y && \
 
 RUN wget https://github.com/bazelbuild/bazel/releases/download/8.0.1/bazel-8.0.1-installer-linux-x86_64.sh && \
     chmod u+x bazel-8.0.1-installer-linux-x86_64.sh && \
-    ./bazel-8.0.1-installer-linux-x86_64.sh --user && \
-    export PATH=$PATH:/root/.bazel/bin && \
-    . ~/.bashrc
+    ./bazel-8.0.1-installer-linux-x86_64.sh --user
 
 # Build Verible 
 RUN git clone https://github.com/chipsalliance/verible.git && \
-    bazel build -c opt :install-binaries && \
+    /root/.bazel/bin/bazel-complete.bash build -c opt :install-binaries && \
     .github/bin/simple-install.sh ~/bin
