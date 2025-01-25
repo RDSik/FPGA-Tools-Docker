@@ -45,6 +45,8 @@ RUN git clone https://github.com/verilator/verilator && \
     make -j `nproc` && \
     make install 
 
+RUN cd ../
+
 # Build Bazel (for verible)
 RUN apt-get update -y && \
     apt install -y \
@@ -55,7 +57,7 @@ RUN apt-get update -y && \
     pkg-config \
     wget \
     zliblg-dev \
-    python
+    python3
 
 RUN wget https://github.com/bazelbuild/bazel/releases/download/8.0.1/bazel-8.0.1-installer-linux-x86_64.sh && \
     chmod u+x bazel-8.0.1-installer-linux-x86_64.sh && \
