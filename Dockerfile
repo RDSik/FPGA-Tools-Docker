@@ -59,6 +59,6 @@ RUN apt install apt-transport-https curl gnupg -y && \
 RUN git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
     bazel build -c opt :install-binaries && \
-    .github/bin/simple-install.sh ~/usr/local/bin
+    .github/bin/simple-install.sh ~/bin/sh
 
 RUN verible-verilog-lint --helpfull
