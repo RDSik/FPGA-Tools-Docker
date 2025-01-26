@@ -64,5 +64,4 @@ FROM ubuntu:latest
 
 # RUN verible-verilog-lint --helpfull
 
-RUN ls && \
-    ls usr
+RUN ls usr/local
