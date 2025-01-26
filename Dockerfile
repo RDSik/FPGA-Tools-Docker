@@ -61,10 +61,5 @@ RUN git clone https://github.com/chipsalliance/verible.git && \
     bazel build -c opt :install-binaries && \
     .github/bin/simple-install.sh ~/bin
 
-RUN cp bazel-bin/verible/verilog/tools/ls/verible-verilog-ls ../usr/local/bin && \
-    cp bazel-bin/verible/verilog/tools/lint/verible-verilog-lint ../usr/local/bin && \
-    cp bazel-bin/verible/verilog/tools/obfuscate/verible-verilog-obfuscate ../usr/local/bin && \
-    cp bazel-bin/verible/verilog/tools/preprocessor/verible-verilog-preprocessor ../usr/local/bin && \
-    cp bazel-bin/verible/verilog/tools/project/verible-verilog-project ../usr/local/bin && \
-    cp bazel-bin/verible/verilog/tools/syntax/verible-verilog-syntax   ../usr/local/bin && \
+RUN cp ~/bin/* ~/usr/local/bin && \
     verible-verilog-lint --helpfull
