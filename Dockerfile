@@ -17,9 +17,8 @@ RUN git clone https://github.com/steveicarus/iverilog && \
     autoconf && \
     ./configure && \
     make check && \
-    make install 
-
-RUN cd ../
+    make install && \
+    cd ../
 
 # Build Verilator
 RUN apt-get update -y && \
@@ -43,9 +42,8 @@ RUN git clone https://github.com/verilator/verilator && \
     autoconf && \
     ./configure && \
     make -j `nproc` && \
-    make install 
-
-RUN cd ../
+    make install && \
+    cd ../
 
 # Build Bazel (for verible)
 RUN apt install apt-transport-https curl gnupg -y && \
@@ -59,6 +57,5 @@ RUN apt install apt-transport-https curl gnupg -y && \
 RUN git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
     bazel build -c opt :install-binaries && \
-    .github/bin/simple-install.sh ../usr/local/bin
-
-RUN verible-verilog-lint --helpfull
+    .github/bin/simple-install.sh ../usr/local/bin && \
+    cd ../
