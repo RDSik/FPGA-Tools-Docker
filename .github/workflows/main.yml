@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: r0d0s/FPGA_Tools:v1
+          tags: r0d0s/fpga_tools:v1
