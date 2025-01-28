@@ -10,7 +10,10 @@
 
 ### Clone repository or Pull image:
 ```bash
-git clone https://github.com/RDSik/Verilator-Iverilog-Verible-Docker.git
+git clone https://github.com/RDSik/Verilator-Iverilog-Verible-Docker.got
+```
+Or pull image
+```bash
 docker pull r0d0s/fpga_tools
 ```
 
