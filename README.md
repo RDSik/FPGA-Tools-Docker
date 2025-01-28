@@ -10,7 +10,7 @@
 
 ### Clone repository:
 ```bash
-git clone https://github.com/RDSik/Verilator-Iverilog-Verible-Docker.got
+git clone https://github.com/RDSik/Verilator-Iverilog-Verible-Docker.git
 cd Verilator-Iverilog-Verible-Docker
 ```
 ### Or pull image:
