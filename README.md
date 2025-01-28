@@ -8,7 +8,7 @@
 * [Verilator](https://github.com/verilator/verilator.git) - Open-source SystemVerilog simulator and lint system.
 * [Verible](https://github.com/chipsalliance/verible.git) - Suite of SystemVerilog developer tools, including a parser, style-linter, formatter and language server.
 
-### Clone repository or Pull image:
+### Clone repository:
 ```bash
 git clone https://github.com/RDSik/Verilator-Iverilog-Verible-Docker.got
 ```
