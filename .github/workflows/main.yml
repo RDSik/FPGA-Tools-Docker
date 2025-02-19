@@ -15,7 +15,7 @@ jobs:
         working-directory: ./
     steps:
       - name: Check out the repository to the runner
-        uses: actions/checkout@v2    
+        uses: actions/checkout@v2
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
       - name: Login to DockerHub
@@ -30,3 +30,11 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: r0d0s/fpga_tools:v1.0
+      - name: Run Docker container
+        uses: addnab/docker-run-action@v3
+        with:
+          image: fpga_tools:v1.0
+          run: |
+            verilator --help
+            iverilog -h
+            verible-verilog-lint --helpfull
