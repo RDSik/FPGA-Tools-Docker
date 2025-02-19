@@ -33,7 +33,7 @@ jobs:
       - name: Run Docker container
         uses: addnab/docker-run-action@v3
         with:
-          image: fpga_tools
+          image: fpga_tools:latest
           run: |
             verilator --help
             iverilog -h
