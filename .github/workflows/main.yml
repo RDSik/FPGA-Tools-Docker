@@ -30,6 +30,17 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: r0d0s/fpga_tools:v1.0
+
+jobs:
+  run-container:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./
+    steps:
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v2
       - name: Run Docker container
         uses: addnab/docker-run-action@v3
         with:
