@@ -1,6 +1,6 @@
 [![Build tools](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml)
 
-# Docker Container with FPGA tools.
+# Docker Container with FPGA tools
 
 ## About tools:
 
