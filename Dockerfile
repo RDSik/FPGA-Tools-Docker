@@ -22,6 +22,8 @@
 
 FROM ubuntu:latest
 
+LABEL org.opencontainers.image.authors="dmitryryabickov@yandex.ru"
+
 # Build Icarus Verilog
 RUN apt-get update -y && \
     apt-get install -y \
@@ -81,3 +83,9 @@ RUN git clone https://github.com/chipsalliance/verible.git && \
     bazel build -c opt :install-binaries && \
     .github/bin/simple-install.sh ../usr/local/bin && \
     cd ../
+
+RUN apt-get install -y python3-pip
+
+COPY requirements.txt ./
+
+RUN pip3 install -r requirements.txt

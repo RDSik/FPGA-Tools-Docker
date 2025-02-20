@@ -1,0 +1,9 @@
+pytest==8.3.4
+cocotb==1.9.2
+cocotb_test==0.2.5
+pyuvm==3.0.0
+uvm_python==0.4.0
+vunit_hdl==4.7.0
+logging==0.4.9.6
+myhdl==0.11.49
+openlane==2.3.8
