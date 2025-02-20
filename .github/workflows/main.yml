@@ -46,4 +46,3 @@ jobs:
           run: |
             verilator --help
             iverilog -h
-            verible-verilog-lint --helpfull
