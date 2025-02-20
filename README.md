@@ -1,4 +1,4 @@
-[![Build tools](https://github.com/RDSik/FPGA-Tools/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools.git/actions/workflows/build.yml)
+[![Build tools](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml)
 
 # Docker Container for FPGA tools.
 
@@ -15,8 +15,8 @@
 
 ### Clone repository:
 ```bash
-git clone https://github.com/RDSik/FPGA-Tools.git
-cd Verilator-Iverilog-Verible-Docker
+git clone https://github.com/RDSik/FPGA-Tools-Docker.git
+cd FPGA-Tools-Docker
 ```
 ### Or pull image:
 ```bash
