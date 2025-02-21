@@ -23,4 +23,5 @@ jobs:
           run: |
             verilator --help
             iverilog -h
-            verible-verilog-lint --helpfull
+            verible-verilog-lint helpful
+            pip list
