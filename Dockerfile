@@ -93,5 +93,5 @@ RUN apt-get update -y && \
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-COPY requirements.txt .
+COPY requirements.txt ./
 RUN pip install -r requirements.txt
