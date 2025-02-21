@@ -31,5 +31,5 @@ docker build -t fpga_tools .
 
 ### Run container:
 ```bash
-docker run fpga_tools
+docker run -it fpga_tools
 ```
