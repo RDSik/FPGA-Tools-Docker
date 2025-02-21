@@ -87,8 +87,11 @@ RUN git clone https://github.com/chipsalliance/verible.git && \
 RUN apt-get update -y && \
     apt-get install -y \
     python3 \
+    python3-venv \
     python3-pip
 
 COPY requirements.txt ./
 
-RUN python3 -m pip install -r requirements.txt
+RUN python3 -m venv .venv && \
+    source .venv/bin/activate \
+    python3 -m pip install -r requirements.txt
