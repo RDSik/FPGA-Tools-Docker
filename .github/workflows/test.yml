@@ -24,4 +24,4 @@ jobs:
             verilator --help
             iverilog -h
             verible-verilog-lint --help_rules all
-            pip3 list
+            pip list
