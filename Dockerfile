@@ -90,7 +90,7 @@ RUN apt-get update -y && \
     python3-venv \
     python3-pip
 
-COPY requirements.txt ./
+COPY requirements.txt .
 
 RUN python3 -m venv .venv && \
     source .venv/bin/activate \
