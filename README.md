@@ -1,4 +1,5 @@
 [![Build tools](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml)
+[![Test tools](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RDSik/FPGA-Tools-Docker/blob/master/LICENSE.txt)
 
 # Docker Container with FPGA tools
