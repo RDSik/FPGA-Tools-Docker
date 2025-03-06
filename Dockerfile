@@ -44,6 +44,32 @@ RUN git clone https://github.com/steveicarus/iverilog && \
     make install && \
     cd ../
 
+# Build Yosys
+RUN apt-get update -y && \
+    apt-get install -y \
+    gperf \
+    build-essential \
+    bison \
+    flex \
+    libreadline-dev \
+    gawk \
+    tcl-dev \
+    libffi-dev \
+    git \
+    graphviz \
+    xdot \
+    pkg-config \
+    python3 \
+    libboost-system-dev \
+    libboost-python-dev \
+    libboost-filesystem-dev \
+    zlib1g-dev
+
+RUN git clone --recurse-submodules https://github.com/YosysHQ/yosys.git && \
+    cd yosys && \
+    make && \
+    cd ../
+
 # Build Verilator
 RUN apt-get update -y && \
     apt-get install -y \
@@ -69,33 +95,7 @@ RUN git clone https://github.com/verilator/verilator && \
     make install && \
     cd ../
 
-# Build Yosys
-RUN apt-get update -y && \
-    apt-get install -y \
-    gperf \
-    build-essential \
-    bison \
-    flex \
-    libreadline-dev \
-    gawk \
-    tcl-dev \
-    libffi-dev \
-    git \
-    graphviz \
-    xdot \
-    pkg-config \
-    python3 \
-    libboost-system-dev \
-    libboost-python-dev \
-    libboost-filesystem-dev \
-    zlib1g-dev
-
-RUN $ git clone --recurse-submodules https://github.com/YosysHQ/yosys.git && \
-    cd yosys && \
-    make && \
-    cd ../
-
-# Build Bazel (for verible)
+# Build Bazel (for Verible)
 RUN apt install apt-transport-https curl gnupg -y && \
     curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg && \
     mv bazel-archive-keyring.gpg /usr/share/keyrings && \
