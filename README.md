@@ -1,4 +1,5 @@
 [![Build tools](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/build.yml)
+[![Test tools](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/RDSik/FPGA-Tools-Docker/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RDSik/FPGA-Tools-Docker/blob/master/LICENSE.txt)
 
 # Docker Container with FPGA tools
@@ -13,6 +14,7 @@
 * [MyHDL](https://github.com/myhdl/myhdl.git) - Package for using Python as a hardware description and verification language.
 * [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane.git) - Automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen and custom methodology scripts for design exploration and optimization. 
 * [UVM-Python](https://github.com/tpoikela/uvm-python.git) - Python and cocotb-based port of the SystemVerilog Universal Verification Methodology (UVM) 1.2.
+* [VUnit](https://github.com/VUnit/vunit.git) - Unit testing framework for VHDL/SystemVerilog.
 
 ### Clone repository:
 ```bash
