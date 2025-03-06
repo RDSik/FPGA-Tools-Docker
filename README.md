@@ -7,6 +7,7 @@
 ## About tools:
 
 * [Iverilog](https://github.com/steveicarus/iverilog.git) - Tool for compiling ALL of the Verilog HDL, as described in the IEEE-1364 standard.
+* [Yosys](https://github.com/YosysHQ/yosys.git) - Open SYnthesis Suite.
 * [Verilator](https://github.com/verilator/verilator.git) - Open-source SystemVerilog simulator and lint system.
 * [Verible](https://github.com/chipsalliance/verible.git) - Suite of SystemVerilog developer tools, including a parser, style-linter, formatter and language server.
 * [Cocotb](https://github.com/cocotb/cocotb.git) - Coroutine based cosimulation library for writing VHDL and Verilog testbenches in Python.
