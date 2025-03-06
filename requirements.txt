@@ -7,3 +7,4 @@ vunit_hdl==4.7.0
 logging==0.4.9.6
 myhdl==0.11.49
 openlane==2.3.8
+klayout==0.29.11
