@@ -21,7 +21,8 @@ jobs:
         with:
           image: r0d0s/fpga_tools:v1.2
           run: |
-            verilator --help
             iverilog -h
+            yosys --help
+            verilator --help
             verible-verilog-lint --help_rules all
             pip list
