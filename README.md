@@ -29,10 +29,10 @@ docker pull r0d0s/fpga_tools
 
 ### Build image:
 ```bash
-docker build -t fpga_tools .
+docker build -t r0d0s/fpga_tools .
 ```
 
 ### Run container:
 ```bash
-docker run -it fpga_tools
+docker run -it r0d0s/fpga_tools
 ```
