@@ -22,8 +22,9 @@
 
 FROM ubuntu:latest
 
-LABEL org.opencontainers.image.authors="dmitryryabickov@yandex.ru"
+LABEL maintainer="dmitryryabickov@yandex.ru"
 
+# Build Gowin Education
 ARG USERNAME
 ARG PASSWORD
 
