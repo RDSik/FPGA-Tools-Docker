@@ -30,6 +30,7 @@ ARG PASSWORD
 
 RUN apt-get update -y && \
     apt-get install -y \
+    libfontconfig1 \
     wget
 
 RUN wget --user=USERNAME --password=PASSWORD https://cdn.gowinsemi.com.cn/Gowin_V1.9.10.03_Education_linux.tar.gz && \
