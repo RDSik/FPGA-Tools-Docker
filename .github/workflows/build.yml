@@ -29,4 +29,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: r0d0s/fpga_tools:v1.2
+          tags: r0d0s/fpga_tools:v1.3
+          build-args: |
+            USERNAME=${{secrets.GOWIN_USERNAME}}
+            PASSWORD=${{secrets.GOWIN_PASSWORD}}
