@@ -139,4 +139,4 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-ENV LD_PRELOAD="/usr/lib64/libfreetype.so"
+# ENV LD_PRELOAD="/usr/lib64/libfreetype.so"
