@@ -25,8 +25,8 @@ FROM ubuntu:latest
 LABEL maintainer="dmitryryabickov@yandex.ru"
 
 # Build Gowin Education
-ARG USERNAME
-ARG PASSWORD
+ARG USERNAME=username
+ARG PASSWORD=password
 
 RUN apt-get update -y && \
     apt-get install -y \
