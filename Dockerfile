@@ -28,8 +28,6 @@ LABEL maintainer="dmitryryabickov@yandex.ru"
 ARG USERNAME=username
 ARG PASSWORD=password
 
-ENV LD_PRELOAD="/usr/lib/libfreetype.so"
-
 RUN apt-get update -y && \
     apt-get install -y \
     libfontconfig1 \
@@ -140,3 +138,5 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
+
+ENV LD_PRELOAD="/usr/lib/libfreetype.so"
