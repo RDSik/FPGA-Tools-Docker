@@ -39,6 +39,7 @@ RUN wget --user=USERNAME --password=PASSWORD https://cdn.gowinsemi.com.cn/Gowin_
     tar -xf Gowin_V1.9.10.03_Education_linux.tar.gz -C gowin
 
 ENV PATH="/gowin/IDE/bin:$PATH"
+ENV LD_PRELOAD="/usr/lib/libfreetype.so:$LD_PRELOAD"
 
 # Build Icarus Verilog
 RUN apt-get update -y && \
