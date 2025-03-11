@@ -24,15 +24,15 @@ cd FPGA-Tools-Docker
 ```
 ### Or pull image:
 ```bash
-docker pull r0d0s/fpga_tools:v1.2
+docker pull r0d0s/fpga_tools:latest
 ```
 
 ### Build image:
 ```bash
-docker build -t r0d0s/fpga_tools:v1.2 .
+docker build -t r0d0s/fpga_tools:latest .
 ```
 
 ### Run container:
 ```bash
-docker run -it r0d0s/fpga_tools:v1.2
+docker run -it r0d0s/fpga_tools:latest
 ```
