@@ -17,19 +17,15 @@
 * [UVM-Python](https://github.com/tpoikela/uvm-python.git) - Python and cocotb-based port of the SystemVerilog Universal Verification Methodology (UVM) 1.2.
 * [VUnit](https://github.com/VUnit/vunit.git) - Unit testing framework for VHDL/SystemVerilog.
 
-### Clone repository:
+### Clone repository and build image:
 ```bash
 git clone https://github.com/RDSik/FPGA-Tools-Docker.git
 cd FPGA-Tools-Docker
+docker build -t r0d0s/fpga_tools:latest .
 ```
 ### Or pull image:
 ```bash
 docker pull r0d0s/fpga_tools:latest
-```
-
-### Build image:
-```bash
-docker build -t r0d0s/fpga_tools:latest .
 ```
 
 ### Run container:
