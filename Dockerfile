@@ -100,6 +100,7 @@ RUN apt-get update -y && \
     perl-doc
     
 RUN git clone https://github.com/verilator/verilator && \
+    git checkout stable && \
     cd verilator && \
     autoconf && \
     ./configure && \
