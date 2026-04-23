@@ -108,16 +108,9 @@ RUN git clone https://github.com/verilator/verilator && \
     make install && \
     cd ../
 
-# Build Bazel (for Verible)
-RUN apt install apt-transport-https curl gnupg -y && \
-    curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg && \
-    mv bazel-archive-keyring.gpg /usr/share/keyrings && \
-    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/bazel-archive-keyring.gpg] https://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list && \
-    apt-get update -y && \
-    apt-get install bazel -y
-
 # Build Verible 
-RUN git clone https://github.com/chipsalliance/verible.git && \
+RUN ./install-bazel.sh && \
+    git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
     bazel build -c opt :install-binaries && \
     .github/bin/simple-install.sh ../usr/local/bin && \
