@@ -28,9 +28,9 @@ LABEL maintainer="dmitryryabickov@yandex.ru"
 RUN apt-get update -y && \
     apt-get install wget -y
 
-RUN wget https://cdn.gowinsemi.com.cn/Gowin_V1.9.10.03_Education_linux.tar.gz && \
+RUN wget https://cdn.gowinsemi.com.cn/Gowin_V1.9.11.03_Education_linux.tar.gz && \
     mkdir gowin && \
-    tar -xf Gowin_V1.9.10.03_Education_linux.tar.gz -C gowin
+    tar -xf Gowin_V1.9.11.03_Education_linux.tar.gz -C gowin
 
 ENV PATH="/gowin/IDE/bin:$PATH"
 ENV LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libfreetype.so.6"
