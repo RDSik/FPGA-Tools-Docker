@@ -28,7 +28,7 @@ LABEL maintainer="dmitryryabickov@yandex.ru"
 RUN apt-get update -y && \
     apt-get install wget -y
 
-RUN wget https://cdn.gowinsemi.com.cn/Gowin_V1.9.11.03_Education_linux.tar.gz && \
+RUN wget https://cdn.gowinsemi.com.cn/Gowin_V1.9.11.03_Education_Linux.tar.gz && \
     mkdir gowin && \
     tar -xf Gowin_V1.9.11.03_Education_linux.tar.gz -C gowin
 
