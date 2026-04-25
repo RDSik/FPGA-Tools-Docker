@@ -111,7 +111,8 @@ RUN git clone https://github.com/verilator/verilator && \
     cd ../
 
 # Build Verible 
-RUN wget https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-linux-x86_64 -O ../usr/local/bin
+RUN wget https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-linux-x86_64 && \
+    mv ./bazel-${BAZEL_VERSION}-linux-x86_64 ../usr/local/bin
 
 RUN git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
