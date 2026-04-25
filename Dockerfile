@@ -110,10 +110,9 @@ RUN git clone https://github.com/verilator/verilator && \
     make install && \
     cd ../
 
-# Build Bazel
+# Build Verible 
 RUN wget https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-linux-x86_64 -O /usr/local/bin
 
-# Build Verible 
 RUN git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
     bazel build -c opt :install-binaries && \
