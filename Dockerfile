@@ -24,6 +24,8 @@ FROM ubuntu:latest
 
 LABEL maintainer="dmitryryabickov@yandex.ru"
 
+ARG BAZEL_VERSION="7.6.1"
+
 # Build Gowin Education
 RUN apt-get update -y && \
     apt-get install wget -y
@@ -108,9 +110,11 @@ RUN git clone https://github.com/verilator/verilator && \
     make install && \
     cd ../
 
+# Build Bazel
+RUN wget https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-linux-x86_64 -O /usr/local/bin
+
 # Build Verible 
-RUN ./install-bazel.sh && \
-    git clone https://github.com/chipsalliance/verible.git && \
+RUN git clone https://github.com/chipsalliance/verible.git && \
     cd verible && \
     bazel build -c opt :install-binaries && \
     .github/bin/simple-install.sh ../usr/local/bin && \
