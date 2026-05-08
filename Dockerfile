@@ -28,7 +28,10 @@ ARG BAZEL_VERSION="7.6.1"
 
 # Build Gowin Education
 RUN apt-get update -y && \
-    apt-get install wget -y
+    apt-get install wget -y \
+    apt-get install ffmpeg -y \
+    apt-get install libsm6 -y \
+    apt-get install libxext6 -y
 
 RUN wget https://cdn.gowinsemi.com.cn/Gowin_V1.9.11.03_Education_Linux.tar.gz && \
     mkdir gowin && \
