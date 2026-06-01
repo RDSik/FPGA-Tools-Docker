@@ -1,6 +1,6 @@
 klayout
 pytest
-cocotb
+cocotb==2.0.0
 cocotb_test
 pyuvm
 uvm_python
