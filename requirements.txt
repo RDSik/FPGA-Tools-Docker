@@ -1,4 +1,4 @@
-klayout==0.29.11
+klayout==0.30.9
 pytest
 cocotb==2.0.0
 cocotb_test
