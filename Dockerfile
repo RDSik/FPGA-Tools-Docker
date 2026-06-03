@@ -134,5 +134,7 @@ RUN apt-get update -y && \
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
+RUN pip install setuptools
+
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
