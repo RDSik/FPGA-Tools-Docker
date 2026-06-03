@@ -1,4 +1,3 @@
-setuptools
 klayout==0.30.9
 pytest
 cocotb==2.0.0
