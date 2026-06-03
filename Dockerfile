@@ -28,7 +28,7 @@ ARG BAZEL_VERSION="7.6.1"
 
 # Build Gowin Education
 RUN apt-get update -y && \
-    apt-get install wget -y \
+    apt-get install -y \
     wget \
     ffmpeg \
     libsm6 \
