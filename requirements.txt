@@ -7,4 +7,4 @@ uvm_python==0.4.0
 logging==0.4.9.6
 myhdl==0.11.49
 openlane==2.3.8
-vunit_hdl==4.7.0
+vunit_hdl
