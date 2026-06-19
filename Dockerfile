@@ -85,9 +85,7 @@ RUN apt-get update -y && \
 
 RUN git clone --recurse-submodules https://github.com/YosysHQ/yosys.git && \
     cd yosys && \
-    cmake -B build . \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_INSTALL_PREFIX=/usr/local && \
+    cmake -B build . -DCMAKE_BUILD_TYPE=Release --fresh \
     cmake --build build --config Release --parallel $(nproc) && \
     cmake --install build --strip && \
     cd ../
