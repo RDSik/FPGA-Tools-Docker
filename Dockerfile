@@ -80,12 +80,16 @@ RUN apt-get update -y && \
     libboost-system-dev \
     libboost-python-dev \
     libboost-filesystem-dev \
-    zlib1g-dev
+    zlib1g-dev \
+    cmake
 
 RUN git clone --recurse-submodules https://github.com/YosysHQ/yosys.git && \
     cd yosys && \
-    make -j$(nproc) && \
-    make install && \
+    cmake -B build . \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr/local && \
+    cmake --build build --config Release --parallel $(nproc) && \
+    cmake --install build --strip && \
     cd ../
 
 # Build Verilator
