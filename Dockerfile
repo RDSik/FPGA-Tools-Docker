@@ -84,7 +84,7 @@ RUN apt-get update -y && \
 
 RUN git clone --recurse-submodules https://github.com/YosysHQ/yosys.git && \
     cd yosys && \
-    make && \
+    make -j$(nproc) && \
     make install && \
     cd ../
 
