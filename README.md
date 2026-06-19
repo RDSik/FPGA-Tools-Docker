@@ -12,7 +12,6 @@
 * [Verible](https://github.com/chipsalliance/verible.git) - Suite of SystemVerilog developer tools, including a parser, style-linter, formatter and language server.
 * [Cocotb](https://github.com/cocotb/cocotb.git) - Coroutine based cosimulation library for writing VHDL and Verilog testbenches in Python.
 * [PyUVM](https://github.com/pyuvm/pyuvm.git) - The UVM written in Python.
-* [UVM-Python](https://github.com/tpoikela/uvm-python.git) - Python and cocotb-based port of the SystemVerilog Universal Verification Methodology (UVM) 1.2.
 
 ### Clone repository and build image:
 ```bash
