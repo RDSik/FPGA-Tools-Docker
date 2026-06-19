@@ -4,7 +4,3 @@ cocotb==1.9.2
 cocotb_test==0.2.5
 pyuvm==3.0.0
 uvm_python==0.4.0
-logging==0.4.9.6
-myhdl==0.11.49
-openlane==2.3.8
-vunit_hdl
